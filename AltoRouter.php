@@ -159,6 +159,7 @@ class AltoRouter {
 
 		// strip base path from request url
 		$requestUrl = substr($requestUrl, strlen($this->basePath));
+                $requestUrl = ($requestUrl !== false) ? $requestUrl : '/';
 
 		// Strip query string (?a=b) from Request Url
 		if (($strpos = strpos($requestUrl, '?')) !== false) {

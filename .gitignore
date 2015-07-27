@@ -6,3 +6,5 @@ build
 vendor
 composer.lock
 phpunit.xml
+/nbproject/private/
+nbproject/
